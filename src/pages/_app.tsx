@@ -12,8 +12,8 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <StyleSheetManager shouldForwardProp={isPropValid}>
       <ThemeProvider theme={theme}>
-        <EmployeeRequisitions />
         <GlobalStyles />
+        <EmployeeRequisitions />
         <Component {...pageProps} />
       </ThemeProvider>
     </StyleSheetManager>

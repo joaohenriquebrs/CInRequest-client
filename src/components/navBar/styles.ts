@@ -11,7 +11,6 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
 `;
 
 export const Direction = styled(Link)`

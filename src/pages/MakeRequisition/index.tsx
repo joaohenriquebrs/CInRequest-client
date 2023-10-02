@@ -1,8 +1,21 @@
 import React from 'react';
+import Image from 'next/image';
 import { useForm, Controller } from 'react-hook-form';
-import { Container, ContainerInput, Form, H1, Label } from './style';
+import {
+  Container,
+  ContainerInput,
+  Form,
+  H1,
+  Label,
+  FooterContainer,
+  FooterLogo,
+  FooterLinks,
+  FooterLink,
+  Division
+} from './style';
 import { NavBar, SubNavBarStudent } from 'components';
 import api from 'services/api';
+import { LogoCin } from 'assets';
 
 interface IFormInput {
   secretaria: string;
@@ -40,8 +53,7 @@ const Formulario: React.FC = () => {
 
   return (
     <>
-      <NavBar />
-
+      <Division></Division>
       <Container>
         <SubNavBarStudent />
 
@@ -97,6 +109,16 @@ const Formulario: React.FC = () => {
           </ContainerInput>
         </Form>
       </Container>
+      <FooterContainer>
+        <FooterLogo href="/MakeRequisition">
+          <Image src={LogoCin} alt="Logo do Centro de Informática" width={200} height={70} />
+        </FooterLogo>
+        <FooterLinks>
+          <FooterLink href="#">Sobre</FooterLink>
+          <FooterLink href="#">Whatsapp</FooterLink>
+          <FooterLink href="#">Instagram</FooterLink>
+        </FooterLinks>
+      </FooterContainer>
     </>
   );
 };

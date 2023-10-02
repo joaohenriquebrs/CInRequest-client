@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { CustomPagination, NavBar, RequisitionCard } from 'components'
-import { Container, ContainerRequisitions, H2 } from './styles';
+import { Container, ContainerRequisitions, Title } from './styles';
 import api from 'services/api';
 
 const fetchData = async () => {
@@ -98,7 +98,7 @@ const EmployeeRequisitions = () => {
         <>
             <NavBar />
             <Container>
-                <H2>Requisições de pessoas alunas</H2>
+                <Title>Requisições de pessoas alunas</Title>
                 <ContainerRequisitions>
                     {displayedItems.map((requisition, index) => (
                         <div key={index}>
