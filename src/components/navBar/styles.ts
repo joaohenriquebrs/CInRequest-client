@@ -1,46 +1,40 @@
 /* eslint-disable prettier/prettier */
+// styles.ts
 import styled from 'styled-components';
 import Link from 'next/link';
 
 export const Nav = styled.nav`
   width: 100%;
   height: 10vh;
-  background: #fcfcfc;
-  border-bottom: 5px solid red;
-
+  background: red; 
+  border-bottom: 5px solid #000;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
 `;
 
 export const Direction = styled(Link)`
   text-decoration: none;
-  color: black;
-  font-size: 1.2rem;
-  font-weight: bolder;
-  transition: all 0.2s ease-in-out;
+  color: #FFFFFF; 
+  font-size: 2.6rem; 
+  font-weight: bold;
+  margin: 0 2rem;
+  transition: color 0.3s ease-in-out;
   &:hover {
-    color: red;
-    border-bottom: 1px solid red;
+    color: #000; 
   }
+`;
+
+export const LiPerson = styled.li`
+  margin: 50px;
 `;
 
 export const UL = styled.ul`
   display: flex;
-  font-size: 1.2rem;
   list-style: none;
-  width: 40%;
-  height: 100%;
+`;
 
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  font-weight: bolder;
-
-  li {
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    &:hover {
-      color: red;
-      border-bottom: 1px solid red;
-    }
-  }
+export const DivImage = styled.a`
+  margin-right: 500px;
 `;

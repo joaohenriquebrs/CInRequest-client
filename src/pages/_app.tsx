@@ -5,23 +5,14 @@ import { StyleSheetManager, ThemeProvider } from 'styled-components';
 
 import GlobalStyles from 'styles/global';
 import theme from 'styles/theme';
+import StudentRequisitions from './StudentRequisitions';
+import EmployeeRequisitions from './AdmRequisition';
 
 function App({ Component, pageProps }: AppProps) {
   return (
     <StyleSheetManager shouldForwardProp={isPropValid}>
       <ThemeProvider theme={theme}>
-        <Head>
-          <title>Next.js Boilerplate</title>
-          <link
-            rel="shortcut icon"
-            href="/img/icon-192.png"
-            type="image/x-icon"
-          />
-          <link rel="apple-touch-icon" href="/img/icon-512.png" />
-          <link rel="manifest" href="/manifest.json" />
-          <meta name="theme-color" content="#06092B" />
-          <meta name="description" content="A simple boilerplate for next.js" />
-        </Head>
+        <EmployeeRequisitions />
         <GlobalStyles />
         <Component {...pageProps} />
       </ThemeProvider>
