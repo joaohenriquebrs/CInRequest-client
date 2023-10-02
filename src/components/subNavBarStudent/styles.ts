@@ -11,26 +11,21 @@ export const ContainerButtons = styled.div`
 
 export const Direction = styled(Link)`
   width: 15rem;
-  height: 5rem;
+  height: 7rem;
   background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px #ccc;
+  border: 1px solid #000;
+  border-radius: 10px;
   transition: all 0.2s ease-in-out;
-
   color: red;
-
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   text-decoration: none;
-
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1.2rem;
 
   &:hover {
-    background-color: #f0f0f0;
+    background-color: #f1f1f1;
   }
 `;

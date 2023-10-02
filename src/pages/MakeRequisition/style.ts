@@ -10,34 +10,39 @@ export const Container = styled.div`
   align-items: center;
 `;
 
+
 export const Form = styled.form`
   width: 100%;
-  height: 50%;
   max-width: 600px;
-  background-color: #fff;
+  height: 450px;
+  background-color: #f5f5f5; 
   padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px #ccc;
-
+  border-radius: 10px; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  gap: 1.2rem;
+  gap: 2.5rem; 
 `;
 
-export const H1 = styled.h1``;
+export const H1 = styled.h1`
+  font-size: 2.5rem;
+  color: red; 
+  margin-bottom: 1rem;
+`;
 
 export const ContainerInput = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1rem; /* Espaçamento entre os inputs */
 `;
 
 export const Label = styled.label`
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: bold;
+  color: #333; 
 `;
 
 export const FooterContainer = styled.div`
